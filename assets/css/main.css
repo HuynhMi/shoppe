@@ -1,0 +1,120 @@
+.app {
+
+}
+
+/* HEADER */
+.header {
+    height: var(--header-height);
+    background-image: linear-gradient( #F53E2D, #FF6533);
+}
+
+.header-above {
+    height: var(--header-above-height);
+    display: flex;
+}
+
+.header-above ul {
+    list-style: none;
+    height: 100%;
+}
+
+.header-above ul li {
+    display: inline-block;
+    margin: 0 8px;
+    height: 100%;
+    line-height: var(--header-above-height);
+    
+}
+
+.header-above ul li, .header-above ul li a {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 300;
+}
+
+.header-above ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-above ul li.txt-strong a{
+    font-weight: 500;
+}
+
+.header-above ul li:hover, .header-above ul li a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.header-above ul li a i {
+    margin-right: 5px;
+    font-size: 1.6rem;
+}
+
+.vertical-bar {
+    position: relative;
+}
+.vertical-bar::after {
+    content: "";
+    height: 50%;
+    width: 0px;
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* header above */
+
+.nav__left {
+}
+.nav__left, .nav__right {
+    flex: 1;
+}
+
+.nav__left-list {
+    text-align: left;
+}
+
+.nav__left-list li:last-child::after {
+    display: none;
+}
+
+.nav__left-item {
+
+}
+
+.nav__left-item-link i:first-child {
+    margin-left: 5px;
+}
+
+.nav__right {
+
+}
+
+.nav__right-list {
+    text-align: right;
+}
+
+.nav__right-item {
+
+}
+
+.nav__right-item-link.margin i:last-child {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+/* header-under */
+
+/* CONTAINER */
+.container {
+
+}
+
+/* FOOTER */
+.footer {
+
+}
