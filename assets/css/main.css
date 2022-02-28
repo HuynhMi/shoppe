@@ -15,41 +15,43 @@
 
 .header-above ul {
     list-style: none;
-    height: 100%;
 }
 
 .header-above ul li {
     display: inline-block;
     margin: 0 8px;
-    height: 100%;
-    line-height: var(--header-above-height);
+    line-height: var(--header-above-height) ;
     
 }
 
 .header-above ul li, .header-above ul li a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--white-color);
     font-weight: 300;
 }
+.header-above ul li, .header-above ul li a {
+}
+
 
 .header-above ul li a {
+    display: inline-block;
     text-decoration: none;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .header-above ul li.txt-strong a{
     font-weight: 500;
 }
 
-.header-above ul li:hover, .header-above ul li a:hover {
+.header-above ul li, .header-above ul li a:hover {
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
 
+
 .header-above ul li a i {
     margin-right: 5px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .vertical-bar {
@@ -86,6 +88,9 @@
 
 }
 
+.nav__left-item-link {
+}
+
 .nav__left-item-link i:first-child {
     margin-left: 5px;
 }
@@ -107,10 +112,78 @@
     margin-right: 0px;
 }
 
+/* header qr code */
+.header__qr {
+    position: absolute;
+    top: 100%;
+    width: 186px;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 3px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+.header__qr-code-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 14px 5px 14px;
+}
+
+.header__qr-apps img {
+    /* width: 100%; */
+    height: 16px;
+}
+
+
+.nav__left-item-has-qr:hover .header__qr {
+    display: block;
+}
+
+
+.languages {    
+    position: relative;
+}
+
+.languages-item {
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 0px 17px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    width: 246px;
+    transform: translateX(-40%);
+}
+
+.languages-item::before {
+    content: "hihi";
+    position: absolute;
+    top: 0;
+    
+}
+.languages-item p {
+
+}
+
 /* header-under */
 
 /* CONTAINER */
 .container {
+    background-color: aquamarine;
+    height: calc(100vh - var(--header-height));
 
 }
 
