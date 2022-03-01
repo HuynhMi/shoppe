@@ -17,40 +17,32 @@
     list-style: none;
 }
 
-.header-above .nav__list .nav__item {
+.nav__item {
     display: inline-block;
     margin: 0 8px;
     position: relative;
 }
 
-.header-above .nav__list .nav__item, .header-above .nav__list .nav__item .nav__item-link {
+.nav__item, .nav__item-link {
     font-size: 1.5rem;
     color: var(--white-color);
     font-weight: 300;
 }
-.header-above .nav__list .nav__item, .header-above .nav__list .nav__item .nav__item-link {
-}
 
-
-.header-above .nav__list .nav__item .nav__item-link {
+.nav__item-link {
     display: inline-block;
     text-decoration: none;
 }
 
-.header-above .nav__list .nav__item.txt-strong a{
+.nav__item.txt-strong a{
     font-weight: 400;
 }
 
-.header-above .nav__list .nav__item:hover, .header-above .nav__list .nav__item .nav__item-link:hover {
+.nav__item:hover, .nav__item-link:hover {
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
 
-
-.header-above .nav__list .nav__item i {
-    margin-right: 5px;
-    font-size: 1.7rem;
-}
 
 .vertical-bar {
     position: relative;
@@ -86,9 +78,13 @@
     line-height: var(--header-above-height) ;
 }
 
+.nav__left-item-link > i:first-child {
+    margin-right: 3px;
+}
+
 .nav__left-has-follow span {
     cursor: text;
-    margin-right: 5px;
+    margin-right: 1px;
 }
 
 .nav__left-has-follow:hover {
@@ -113,11 +109,12 @@
     display: block;
 }
 
-.nav__right-has-languages i:last-child {
-    margin-left: 5px;
-    margin-right: 0px;
+.nav__right-icon-has-margin-left {
+    margin-left: 1px;
 }
-
+.nav__right-icon-has-margin-right {
+    margin-right: 1px;
+}
 /* header qr code */
 .header__qr {
     position: absolute;
@@ -330,3 +327,88 @@
 .footer {
 
 }
+
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    background-color: #fff;
+    margin: auto;
+    z-index: 1;
+}
+
+.modal__inner {
+
+}
+
+.auth-form {
+
+}
+
+.auth-form__header {
+
+}
+
+.auth-form__heading {
+
+}
+
+.auth-form__switch-btn {
+
+}
+
+.auth-form__form {
+
+}
+
+.auth-form__group-form {
+
+}
+
+.auth-form__input {
+
+}
+
+.auth-form__policy {
+
+}
+
+.auth-form__policy-text {
+
+}
+
+.auth-form__policy-link-rules {
+
+}
+
+.auth-form__policy-link-privacy {
+
+}
+
+.auth-form__controls {
+
+}
+
+.btn {
+
+}
+
+.auth-form__socials {
+
+}
+

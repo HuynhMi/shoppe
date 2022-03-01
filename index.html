@@ -55,7 +55,10 @@
                     <nav class="nav__right">
                         <ul class="nav__list nav__right-list">
                             <li class="nav__item nav__right-item nav__right-has-notify">
-                                <a class="nav__item-link nav__right-item-link" href="#"><i class="fa-solid fa-bell"></i>Notifications</a>
+                                <a class="nav__item-link nav__right-item-link" href="#">
+                                    <i class="nav__right-icon-has-margin-right fa-solid fa-bell"></i>
+                                    Notifications
+                                </a>
                                 <div class="header__notify">
                                     <header class="header__notify-header">
                                         <h3>New notice received</h3>
@@ -102,12 +105,15 @@
                                 </div>
                             </li>
                             <li class="nav__item nav__right-item">
-                                <a class="nav__item-link nav__right-item-link" href="#"><i class="fa-solid fa-circle-question"></i>Helps</a>
+                                <a class="nav__item-link nav__right-item-link" href="#">
+                                    <i class="nav__right-icon-has-margin-right fa-solid fa-circle-question"></i>
+                                    Helps
+                                </a>
                             </li>
                             <li class="nav__item nav__right-item nav__right-has-languages">
-                                <i class="fa-solid fa-globe"></i>
+                                <i class="nav__right-icon-has-margin-right fa-solid fa-globe"></i>
                                 English
-                                <i class="fa-solid fa-angle-down"></i>
+                                <i class="nav__right-icon-has-margin-left fa-solid fa-angle-down"></i>
                                 <div class="header__languages">
                                     <ul class="header__languages-list">
                                         <li class="header__languages-item">Vietnamese</li>
@@ -133,6 +139,59 @@
         <div class="container"></div>
 
         <div class="footer"></div>
+    </div>
+
+    <div class="modal">
+        <div class="overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <!-- authen form  -->
+                <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Sign Up</h3>
+                        <span class="auth-form__switch-btn">Login</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group-form">
+                            <input type="text" class="auth-form__input" placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="auth-form__group-form">
+                            <input type="password" class="auth-form__input" placeholder="Enter your password">
+                        </div>
+
+                        <div class="auth-form__group-form">
+                            <input type="password" class="auth-form__input" placeholder="Enter your password again">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__policy">
+                        <p class="auth-form__policy-text">By registering, you agree to us about 
+                            <span class="auth-form__policy-link-rules">rules</span>
+                            &
+                            <span class="auth-form__policy-link-privacy">Privacy Policy</span>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <butotn class="btn">RETURN</butotn>
+                        <butotn class="btn">SIGN UP</butotn>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="connec-to-facebook" class="btn">
+                            <i class="fa-brands fa-facebook-square"></i>
+                            Connect to Facebook
+                        </a>
+                        <a href="connec-to-google" class="btn">
+                            <i class="fa-brands fa-google"></i>
+                            Connect to Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
