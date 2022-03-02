@@ -3,6 +3,7 @@
     --header-above-height: 34px;
     --white-color: #fff;
     --primary-color: #F53E2D;
+    --text-color: #333;
 }
 
 * {
@@ -14,4 +15,33 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+}
+
+/* button */
+.btn {
+    min-width: 142px;
+    height: 34px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn.btn--size-s {
+    height: 32px;
+}
+
+.btn.btn--disabled {
+    background-color: #c3c3c3;
+    color: #7c7a7a;
+    cursor: default;
 }

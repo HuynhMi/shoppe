@@ -144,9 +144,9 @@
     <div class="modal">
         <div class="overlay"></div>
         <div class="modal__body">
-            <div class="modal__inner">
-                <!-- authen form  -->
-                <div class="auth-form">
+            <!-- authen form  -->
+            <div class="auth-form">
+                <div class="auth-form__inner">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Sign Up</h3>
                         <span class="auth-form__switch-btn">Login</span>
@@ -168,27 +168,28 @@
 
                     <div class="auth-form__policy">
                         <p class="auth-form__policy-text">By registering, you agree to us about 
-                            <span class="auth-form__policy-link-rules">rules</span>
+                            <span class="auth-form__policy-link"><a href="#">rules</a></span>
                             &
-                            <span class="auth-form__policy-link-privacy">Privacy Policy</span>
+                            <span class="auth-form__policy-link"><a href="">Privacy Policy</a></span>
                         </p>
                     </div>
 
                     <div class="auth-form__controls">
-                        <butotn class="btn">RETURN</butotn>
-                        <butotn class="btn">SIGN UP</butotn>
+                        <butotn class="btn auth-form__control-back">RETURN</butotn>
+                        <butotn class="btn btn--primary">SIGN UP</butotn>
                     </div>
 
-                    <div class="auth-form__socials">
-                        <a href="connec-to-facebook" class="btn">
-                            <i class="fa-brands fa-facebook-square"></i>
-                            Connect to Facebook
-                        </a>
-                        <a href="connec-to-google" class="btn">
-                            <i class="fa-brands fa-google"></i>
-                            Connect to Google
-                        </a>
-                    </div>
+                </div>
+                    
+                <div class="auth-form__socials">
+                    <a href="connec-to-facebook" class="btn auth-form__socials--facebook btn--size-s">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Connect Facebook</span>
+                    </a>
+                    <a href="connec-to-google" class="btn auth-form__socials--google btn--size-s">
+                        <i class="fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Connect Google</span>
+                    </a>
                 </div>
             </div>
         </div>
