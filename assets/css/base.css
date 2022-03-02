@@ -1,6 +1,7 @@
 :root {
     --header-height: 119px;
     --header-above-height: 34px;
+    --header-under-height: calc(var(--header-height) - var(--header-above-height));
     --white-color: #fff;
     --primary-color: #F53E2D;
     --text-color: #333;
@@ -30,7 +31,6 @@ html {
     text-decoration: none;
     padding: 0 12px;
     line-height: 1.6rem;
-    text-transform: capitalize;
 }
 
 .btn.btn--primary {
