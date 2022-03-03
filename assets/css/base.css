@@ -5,6 +5,7 @@
     --white-color: #fff;
     --primary-color: #F53E2D;
     --text-color: #333;
+    --border-color: #D9D9D9;
 }
 
 * {
@@ -56,5 +57,16 @@ html {
     }
     to {
         transform: scale(1);
+    }
+}
+
+@keyframes growth-opcacity {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
