@@ -386,6 +386,7 @@
     min-height: 100px;
     cursor: default;
     display: none;
+    
 
 }
 
@@ -457,6 +458,7 @@
 
 .header__cart-item {
     padding: 12px;
+    cursor: pointer;
 }
 
 .header__cart-item--viewed {
@@ -532,11 +534,19 @@
     text-transform: capitalize;
 }
 
+.header__cart-item-info-remove:hover {
+    color: var(--primary-color);
+}
+
 .header__cart-button {
     float: right;
     margin-right: 12px;
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.header__cart-button:hover {
+    background-color: var(--button-hover-color);
 }
 
 /* search */
