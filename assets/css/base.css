@@ -32,6 +32,7 @@ html {
     text-decoration: none;
     padding: 0 12px;
     line-height: 1.6rem;
+    border: none;
 }
 
 .btn.btn--primary {

@@ -383,9 +383,9 @@
     transform-origin: 95% -13px;
     animation: growth-opcacity ease-in 0.25s;
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
-    min-height: 200px;
-    display: none;
+    min-height: 100px;
     cursor: default;
+    display: none;
 
 }
 
@@ -425,6 +425,10 @@
     display: block;
 }
 
+.header__cart-inner.header__cart-inner--no-cart .header__cart-heading, .header__cart-inner.header__cart-inner--no-cart .header__cart-button {
+    display: none;
+}
+
 .header__cart-no-cart-msg {
     font-size: 1.6rem;
     color: var(--text-color);
@@ -433,6 +437,106 @@
     position: relative;
     top: -25px;
     display: none;
+}
+
+/* has cart */
+.header__cart-heading {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 12px 10px;
+    text-align: left;
+    color: #c0bfbf;
+    font-weight: 400;
+
+}
+
+.header__cart-list {
+    list-style: none;
+}
+
+.header__cart-item {
+    padding: 12px;
+}
+
+.header__cart-item--viewed {
+    background-color: #fafafa;
+}
+
+.header__cart-item:hover {
+    background-color: #fafafa;
+}
+
+.header__cart-item-link {
+    display: flex;
+    text-decoration: none;
+}
+
+.header__cart-item-img {
+    height: 45px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    margin-right: 12px;
+}
+
+
+.header__cart-item-info {
+    flex: 1;
+}
+
+.header__cart-item-info-above {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header__cart-item-info-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.header__cart-item-info-price-wrap {
+}
+
+.header__cart-item-info-price {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.header__cart-item-info-multiply {
+    font-size: 1.2rem;
+    color: #6d6c6c;
+    margin: 0 5px;
+}
+
+.header__cart-item-info-quanlity, .header__cart-item-info-description  {
+    font-size: 1.4rem;
+    color: #6d6c6c;
+}
+
+.header__cart-item-info-under {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__cart-item-info-description {
+    text-transform: capitalize;
+}
+
+.header__cart-item-info-remove {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.header__cart-button {
+    float: right;
+    margin-right: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 /* search */
