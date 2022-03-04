@@ -389,6 +389,11 @@
     display: flex;
 }
 
+.header__logo-link {
+    text-decoration: none;
+    color: none;
+}
+
 .header__logo-img {
     width: 146px;
     margin: auto;
@@ -456,7 +461,7 @@
     border-width: 9px 13px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
-    right: 8px;
+    right: 10px;
 }
 
 .header__cart-inner::after {
