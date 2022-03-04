@@ -26,14 +26,18 @@
                 <div class="header-above">
                     <nav class="nav__left">
                         <ul class="nav__list nav__left-list">
-                            <li class="nav__item nav__left-item vertical-bar">
-                                <a class="nav__item-link nav__left-item-link" href="#">Seller Centre</a>
+                            <li class="nav__item vertical-bar">
+                                <a class="nav__item-link" href="#">
+                                    Seller Centre
+                                </a>
                             </li>
-                            <li class="nav__item nav__left-item vertical-bar">
-                                <a class="nav__item-link nav__left-item-link" href="#">Join as Seller</a>
+                            <li class="nav__item vertical-bar">
+                                <a class="nav__item-link" href="#">
+                                    Join as Seller
+                                </a>
                             </li>
-                            <li class="nav__item nav__left-item vertical-bar nav__left-item-has-qr">
-                                Download
+                            <li class="nav__item vertical-bar nav-has-qr">
+                                <span class="nav__item-title">Download</span>
                                 <div class="header__qr">
                                     <img src="./assets/image/qr_code.png" alt="" class="header__qr-code-img">
                                     <div class="header__qr-apps">
@@ -45,19 +49,23 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav__item nav__left-item vertical-bar nav__left-has-follow">
-                                <span>Follow us on</span>
-                                <a class="nav__item-link nav__left-item-link" href="fcacebook"><i class="fa-brands fa-facebook"></i></a>
-                                <a class="nav__item-link nav__left-item-link" href="instagram"> <i class="fa-brands fa-instagram"></i></a>
+                            <li class="nav__item vertical-bar nav-has-follow">
+                                <span class="nav__item-title">Follow us on</span>
+                                <a class="nav__item-link" href="fcacebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a class="nav__item-link" href="instagram"> 
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
                             </li>
                         </ul>
                     </nav>
                     <nav class="nav__right">
                         <ul class="nav__list nav__right-list">
-                            <li class="nav__item nav__right-item nav__right-has-notify">
-                                <a class="nav__item-link nav__right-item-link" href="#">
-                                    <i class="nav__right-icon-has-margin-right fa-regular fa-bell"></i>
-                                    Notifications
+                            <li class="nav__item nav-has-notify">
+                                <a class="nav__item-link" href="#">
+                                    <i class="fa-regular fa-bell"></i>
+                                    <span class="nav__item-title">Notification</span>
                                 </a>
                                 <div class="header__notify">
                                     <header class="header__notify-header">
@@ -104,16 +112,16 @@
                                     </footer>
                                 </div>
                             </li>
-                            <li class="nav__item nav__right-item">
-                                <a class="nav__item-link nav__right-item-link" href="#">
-                                    <i class="nav__right-icon-has-margin-right fa-regular fa-circle-question"></i>
-                                    Helps
+                            <li class="nav__item">
+                                <a class="nav__item-link" href="#">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                    <span class="nav__item-title">Helps</span>
                                 </a>
                             </li>
-                            <li class="nav__item nav__right-item nav__right-has-languages">
-                                <i class="nav__right-icon-has-margin-right fa-solid fa-globe"></i>
-                                English
-                                <i class="nav__right-icon-has-margin-left fa-solid fa-angle-down"></i>
+                            <li class="nav__item nav-has-languages">
+                                <span class="nav__item-icon"><i class="fa-solid fa-globe"></i></span>
+                                <span class="nav__item-title">English</span>
+                                <span class="nav__item-icon"><i class="fa-solid fa-angle-down"></i></span>
                                 <div class="header__languages">
                                     <ul class="header__languages-list">
                                         <li class="header__languages-item">Vietnamese</li>
@@ -122,14 +130,15 @@
                                 </div>
                             </li>
                             <!-- log in/sign up -->
-                            <!-- <li class="nav__item nav__right-item txt-strong vertical-bar">
-                                <a href="" class="nav__item-link nav__right-item-link">Sign Up</a>
+                            <!-- <li class="nav__item txt-strong vertical-bar">
+                                <a href="" class="nav__item-link">Sign Up</a>
                             </li>
-                            <li class="nav__item nav__right-item txt-strong">
-                                <a href="" class="nav__item-link nav__right-item-link">Login</a>
+                            <li class="nav__item txt-strong">
+                                <a href="" class="nav__item-link">Login</a>
                             </li> -->
-                            <li class="nav__item nav__right-item nav__right-item-user">
-                                <i class="nav__right-icon-has-margin-right fa-solid fa-user"></i> Phạm Mi
+                            <li class="nav__item nav__user">
+                                <img src="./assets/image/avatar_dog.jpg" class="nav__user-info-avatar" alt="" >
+                                <span class="nav__user-info-name">Phạm Mi</span>
                                 <ul class="nav__user-info-list">
                                     <li class="nav__user-info-item">
                                         <a href="#" class="nav__user-info-link">My account</a>
@@ -140,7 +149,7 @@
                                     <li class="nav__user-info-item">
                                         <a href="#" class="nav__user-info-link">My address</a>
                                     </li>
-                                    <li class="nav__user-info-item">
+                                    <li class="nav__user-info-item nav__user-info-item--separate">
                                         <a href="#" class="nav__user-info-link">Logout</a>
                                     </li>
                                 </ul>
