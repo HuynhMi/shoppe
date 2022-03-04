@@ -170,7 +170,7 @@
     background-color: #fff;
     width: 370px;
     border: 1px solid #D3D3D3;
-    transform-origin: 90% top;
+    transform-origin: 88% top;
     animation: headertooltipGrow ease-in .25s;
     display: none;
     border-radius: 2px;
@@ -179,12 +179,12 @@
 
 .header__notify::before {
     content: "";
-    border-width: 20px 28px;
+    border-width: 20px 29px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
     position: absolute;
-    top: -30px;
-    right: 25px;
+    top: -29px;
+    right: 12px;
 }
 
 @keyframes headertooltipGrow {
@@ -289,13 +289,13 @@
 
 .header__languages::before {
     content: "";
-    border-width: 20px 26px;
+    border-width: 20px 29px;
     border-top: 0px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
     position: absolute;
-    top: -10px;
-    right: 27px;
+    top: -9px;
+    right: 13px;
     cursor: default;
 }
 
@@ -334,6 +334,7 @@
     border-radius: 2px;
     transform-origin: 80% top;
     animation: growth ease-in 0.25s;
+    border: 1px solid var(--border-color);
     display: none;
 }
 
@@ -456,12 +457,11 @@
 .header__cart-inner::before {
     content: "";
     position: absolute;
-    top: -33px;
-    border-width: 22px;
+    top: -18px;
+    border-width: 9px 13px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
-    right: 0px;
-    /* cursor: default; */
+    right: 8px;
 }
 
 .header__cart-inner::after {
@@ -735,7 +735,7 @@
 .header__search-options-list {
     list-style: none;
     position: absolute;
-    top: calc(100% + 13px);
+    top: calc(100% + 11px);
     right: 0;
     background-color: #fff;
     width: 110px;
