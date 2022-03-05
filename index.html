@@ -335,12 +335,20 @@
                     <div class="col l-10">
                         <div class="home-filter-wrap">
                             <span class="home-fillter__label">Sort by</span>
-                            <button class="home-fillter__btn btn btn--primary">Popular</button>
+                            <button class="btn btn--primary">Popular</button>
                             <button class="home-fillter__btn btn btn--white">Latest</button>
                             <button class="home-fillter__btn btn btn--white">Top Sales</button>
-                            <div class="home-filter__selection">
+                            <div class="home-fillter__btn home-filter__selection">
                                 <span class="home-filter__selection-label">Price</span>
-                                <i class="fa-solid fa-angle-down"></i>
+                                <i class="home-filter__selection-icon fa-solid fa-angle-down"></i>
+                                <ul class="home-filter__selection-list">
+                                    <li class="home-filter__section-item">
+                                        Price: Low To High
+                                    </li>
+                                    <li class="home-filter__section-item">
+                                        Price: High To Low
+                                    </li>
+                                </ul>
                             </div>
                             <div class="home-filter__page">
                                 <span class="home-filter__num">
@@ -348,11 +356,11 @@
                                     /14
                                 </span>
                                 <div class="home-filter__controls">
-                                    <a href="" class="home-filter__control-item-link">
-                                        <i class="fa-solid fa-angle-left"></i>
+                                    <a href="" class="home-filter__control-item-link home-filter__control-item-link--disabled">
+                                        <i class="home-filter__control-item-icon fa-solid fa-angle-left"></i>
                                     </a>
                                     <a href="" class="home-filter__control-item-link">
-                                        <i class="fa-solid fa-angle-right"></i>
+                                        <i class="home-filter__control-item-icon fa-solid fa-angle-right"></i>
                                     </a>
                                 </div>
                             </div>
