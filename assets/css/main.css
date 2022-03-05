@@ -795,10 +795,129 @@
 
 /* CONTAINER */
 .container {
-    background-color: aquamarine;
+    background-color: #F5F5F5;
     height: calc(100vh - var(--header-height));
+    padding-top: 29px;
+}
+
+/* Category */
+.category {
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.catagory__heading {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    padding: 12px 16px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category__heading-icon {
+    font-size: 1.4rem;
+    position: relative;
+    top: 0px;
+}
+
+.category__list {
+    list-style: none;
+    margin-left: 11px;
+    margin-top: 7px;
+}
+
+.category__item {
 
 }
+
+.category__item:last-child {
+    padding-bottom: 2px;
+}
+
+.category__item:hover .category__item-link {
+    color: var(--primary-color);
+    right: -10px;
+    transition: right linear 0.2s;
+}
+
+.category__item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 7px 16px;
+    display: block;
+    position: relative;
+    right: 0;
+}
+.category__item.category__item--active .category__item-link {
+    color: var(--primary-color);
+}
+
+.category__item.category__item--active .category__item-link::before {
+    content: "";
+    border: 5px solid;
+    border-color: transparent transparent transparent var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-60%);
+
+}
+
+
+/* home-filter */
+.home-filter-wrap {
+    background-color: #EDEDED;
+    padding: 16px 12px;
+}
+
+.home-fillter__label {
+    font-size: 1.4rem;
+    color: #666;
+    margin-right: 15px;
+}
+
+.home-fillter__btn+.home-fillter__btn {
+    margin-left: 9px;
+}
+
+.home-filter__selection {
+    
+}
+
+.home-filter__selection-label {
+
+}
+
+.home-filter__page {
+   
+}
+
+.home-filter__num {
+
+}
+
+.home-filter__num-current {
+
+}
+
+.home-filter__controls {
+
+}
+
+.home-filter__control-item {
+
+}
+
+.home-filter__control-item-link {
+
+}
+
+.home-filter__control-item-link i {
+
+}
+
+
 
 /* FOOTER */
 .footer {

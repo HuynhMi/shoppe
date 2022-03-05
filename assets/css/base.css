@@ -22,12 +22,12 @@ html {
 
 /* button */
 .btn {
-    min-width: 142px;
+    min-width: 90px;
     height: 34px;
     font-size: 1.4rem;
     border-radius: 2px;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -51,6 +51,9 @@ html {
     cursor: default;
 }
 
+.btn.btn--white {
+    background-color: var(--white-color);
+}
 /* keyframe */
 @keyframes growth {
     from {
