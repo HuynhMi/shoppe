@@ -919,13 +919,14 @@
 .home-filter__selection-list {
     list-style: none;
     position: absolute;
-    top: calc(100% + 1px);
+    top: calc(100% + 2px);
     left: 0;
     right: 0;
     background-color: var(--white-color);
     cursor: pointer;
     animation: fadeIn ease-in 0.15s;
     display: none;
+    border-radius: 2px;
 }
 
 .home-filter__selection-list::before {
@@ -1011,7 +1012,102 @@
     color: #cfcfcf;
 }
 
+/* home-product */
+.home-products {
+    margin-top: 10px;
+}
 
+.home-product-item {
+
+}
+
+.home-product-item__link {
+    text-decoration: none;
+}
+
+
+.home-product-item__img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.home-product-item__inner {
+    padding: 10px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.home-product-item__description {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.8rem;
+    height: 36px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-product-item__price {
+    margin: 10px 0px;
+}
+
+.home-product-item__old-price {
+    font-size: 1.3rem;
+    color: #595959;
+    text-decoration: line-through;
+    margin-right: 3px;
+}
+
+.home-prodcut-item__current-price {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.home-product-item__active {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.home-product-item__active-heart {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.home-product-item__active-heart.home-product-item__active-heart--active {
+    color: red;
+}
+
+.home-product-item__rating {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.home-product-item__rating.home-product-item__rating--active {
+    color: rgb(255,206,61);
+}
+
+.home-product-item__origin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-product-item__origin span {
+    font-size: 1.3rem;
+    color: #595959;
+}
+
+.home-product-item__brand {
+
+}
+
+.home-product-item__origin-name {
+
+}
 
 /* FOOTER */
 .footer {
