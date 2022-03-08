@@ -75,3 +75,10 @@ html {
         opacity: 1;
     }
 }
+
+@media (max-width: 1240px) and (min-width: 1024px) {
+    html {
+        font-size: 57.5%;
+    }
+    
+}
