@@ -55,6 +55,47 @@ html {
 .btn.btn--white {
     background-color: var(--white-color);
 }
+
+/* pagination ui */
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__item {
+    margin: 0 10px;
+}
+
+
+.pagination__item-link {
+    --height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #9393B3;
+    height: var(--height);
+    width: 40px;
+    text-align: center;
+    line-height: var(--height);
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.pagination__item.pagination__item--active .pagination__item-link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination__item.pagination__item--active .pagination__item-link:hover {
+    background-color: var(--button-hover-color);
+}
+
+.pagination__item-icon {
+    font-size: 1.8rem;
+    color: #9393B3;
+}
+
 /* keyframe */
 @keyframes growth {
     from {

@@ -1359,7 +1359,10 @@ i.home-product-item__active-heart--fill {
     margin-top: 1px;
 }
 
-
+/* pagination */
+.home-products__pagination {
+    margin: 38px 0 158px 0px;
+}
 
 /* FOOTER */
 .footer {
