@@ -1366,10 +1366,139 @@ i.home-product-item__active-heart--fill {
 
 /* FOOTER */
 .footer {
-    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+.footer-container {
+    padding-top: 50px;
+    background-color: #FBFBFB;
+}
+
+.footer-container__above {
+    padding-bottom: 27px;
+    
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+    
+}
+
+.footer-group  {
+
+}
+
+.footer__heading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.footer__list {
+    margin-top: 12px;
+}
+
+.footer__item {
+    
+}
+
+.footer__item-link {
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 6px 0px;
+    display: block;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.footer__item-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+.footer__download {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer__download-qr-code {
+    height: 84px;
+    border: 1px solid #E4E4E4;
+    border-radius: 2px;
+}
+
+.footer__download-apps {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+}   
+
+.footer__download-app-img {
+    height: 18px;
+    object-fit: contain;
+    /* margin-bottom: 5px; */
 }
 
 
+.footer-container__under {
+    border-top: 1px solid #E1E1E1;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contry__list {
+}
+
+.footer-contry__item {
+    display: inline-block;
+}
+
+.footer-contry__item:first-child .footer-contry__item-link::after {
+    display: none;
+}
+
+.footer-contry__item:last-child .footer-contry__item-link::after {
+    display: none;
+}
+
+.footer-contry__item-link {
+    font-size: 1.4rem;
+    color: #737373;
+    padding: 0px 6px;
+    position: relative;
+}
+
+
+.footer-contry__item-link::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #C9C9C9;
+    right: -1px;
+    top: 0;
+    position: absolute;
+}
+
+
+.footer-footer {
+    background-color: #F5F5F5;
+    padding: 20px 0px;
+}
+
+.footer__text {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #737373;
+}
 
 /* MODAL */
 .modal {
