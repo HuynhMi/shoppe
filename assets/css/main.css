@@ -1509,6 +1509,7 @@ i.home-product-item__active-heart--fill {
     bottom: 0;
     display: flex;
     display: none;
+    z-index: 1;
 }
 
 .overlay {
